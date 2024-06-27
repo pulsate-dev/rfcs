@@ -1,0 +1,20 @@
+[book]
+title = "Pulsate RFCs"
+description = "Request for Comments for the Pulsate Project"
+src = "rfcs"
+language = "ja"
+authors = ["Pulsate Project Team"]
+
+[build]
+build-dir = "build"
+create-missing = false
+use-default-templates = true
+
+[output.html]
+git-repository-url = "https://github.com/pulsate-dev/rfcs"
+
+[preprocessor.toc]
+command = "mdbook-toc"
+renderer = ["html"]
+
+[preprocessor.alerts]
