@@ -1,7 +1,6 @@
 [book]
 title = "Pulsate RFCs"
 description = "Request for Comments for the Pulsate Project"
-src = "rfcs"
 language = "ja"
 authors = ["Pulsate Project Team"]
 

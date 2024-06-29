@@ -36,21 +36,30 @@ jobs:
       - name: Setup Rust
         uses: dtolnay/rust-toolchain@stable
 
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
       - name: Setup mdbook
         uses: peaceiris/actions-mdbook@v2
         with:
           mdbook-version: ${{ env.MDBOOK_VERSION }}
 
+      - name: Setup cache
+        uses: Swatinem/rust-cache@v2
+        with:
+          prefix-key: "rfcs/gh-actions-cache"
+
       - name: Install mdbook plugins
         run: |
           cargo install mdbook-toc --version ${{ env.MDBOOK_TOC_VERSION }}
           cargo install mdbook-alerts --version ${{ env.MDBOOK_ALERTS_VERSION }}
+  
+      - name: Build rfcs summary
+        run: |
+          python build.py
 
-      - name: Setup cache
-        uses: Swatinem/rust-cache@v2
-        with:
-          prefix-key: "dev-guide/gh-actions-cache"
-    
       - name: Build dev-guide
         run: |
           mdbook build
