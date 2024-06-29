@@ -1,0 +1,33 @@
+name: Check RFCs PR
+
+on:
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  pull-requests: write
+
+jobs:
+  check_rfc:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Check RFCs
+        run: |
+          python ./scripts/check.py
+
+      - name: Comment on PR if check fails
+        if: ${{ failure() }}
+        uses: thollander/actions-comment-pull-request@v2
+        with:
+          message: |
+            プロジェクトチームへ:
+                この RFCs をマージするには RFCs 番号 (Pulsate RFCs Tracking Number) を割り当てる必要があります. 割り当てるまではマージできません.
+            
