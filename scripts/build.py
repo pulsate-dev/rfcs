@@ -15,7 +15,7 @@ def main():
         f.write("[How to submit proposals](./how-to.md)\n\n")
         f.write("----\n\n")
 
-        for p in os.listdir('rfcs'):
+        for p in sorted(os.listdir('rfcs')):
             f.write(f"[{p}](./rfcs/{p})\n")
 
 if __name__ == '__main__':
