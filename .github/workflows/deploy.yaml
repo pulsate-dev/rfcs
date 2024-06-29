@@ -59,7 +59,7 @@ jobs:
   
       - name: Build rfcs summary
         run: |
-          python build.py
+          python ./scripts/build.py
 
       - name: Build dev-guide
         run: |
