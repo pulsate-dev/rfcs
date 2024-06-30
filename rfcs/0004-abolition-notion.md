@@ -38,7 +38,7 @@ Pulsate は現状寄付金の受け付けはしておらず, チームオーナ�
 
 # Benefit
 
-メリット, 利点なし.
+- 運営費の削減
 
 # Alternatives
 
