@@ -38,7 +38,7 @@ Notion の代替先として rust-lang/mdbook, GitHub Pages を使った GitHub 
 # Unresolved issue
 
 - プライベートリポジトリ上での GitHub Actions 実行制限
-  - デプロイなどに使用する.
+  - デプロイなどに使用する GitHub Actions はプライベートリポジトリの場合, 2000 分/月 までの実行制限がある.
   - Pulsate の GitHub Org は課金していないため, プライベートリポジトリの場合 実行制限が発生する.
 
 # References
