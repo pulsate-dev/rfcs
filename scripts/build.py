@@ -16,7 +16,8 @@ def main():
         f.write("----\n\n")
 
         for p in sorted(os.listdir('rfcs')):
-            f.write(f"[{p}](./rfcs/{p})\n")
+            if p.endswith(".md"):
+                f.write(f"[{p}](./rfcs/{p})\n")
 
 if __name__ == '__main__':
     main()
