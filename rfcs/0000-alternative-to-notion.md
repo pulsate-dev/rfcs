@@ -24,8 +24,6 @@ Notion の代替先として rust-lang/mdbook, GitHub Pages を使った GitHub 
 - rust-lang/mdbook: ドキュメントのビルドに使用. Rust 製のドキュメントジェネレータ. Rust 内でも広く使われている.
   - [The Rust Programming Language](https://doc.rust-jp.rs/book-ja/)
 
-![Mermaid](./0000-alternative-to-notion/mermaid.jpg)
-
 # Benefit
 
 - Notion など外部に依存しないドキュメント管理が可能になる.
