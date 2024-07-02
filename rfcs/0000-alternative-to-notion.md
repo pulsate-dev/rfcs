@@ -2,10 +2,8 @@
 - 提案名: Notion の代替サービスを GitHub 管理に変更する
 - 提案日時: 2024-07-02
 - 提案者署名: Sho Sakuma <m1sk9@pulsate.dev>
-- RFCs Tracking PR: <!-- この提案を追跡するための PR のリンク (後で追加) -->
-- RFCs Traching Issue: <!-- この提案を追跡するための Issue のリンク (オプション) -->
+- RFCs Tracking PR: [#6](https://github.com/pulsate-dev/rfcs/pull/6)
 ---
-
 
 # Summary
 
@@ -26,14 +24,27 @@ Notion の代替先として rust-lang/mdbook, GitHub Pages を使った GitHub 
 - rust-lang/mdbook: ドキュメントのビルドに使用. Rust 製のドキュメントジェネレータ. Rust 内でも広く使われている.
   - [The Rust Programming Language](https://doc.rust-jp.rs/book-ja/)
 
+![Mermaid](./0000-alternative-to-notion/mermaid.jpg)
+
 # Benefit
-<!-- この提案のメリット -->
+
+- Notion など外部に依存しないドキュメント管理が可能になる.
+- Cloudflare Zero Trust は比較的自由度が高いため, アクセス制限を細かく設定できる.
+  - 例: 外部の一部のメンバーにのみ閲覧権限を与える など.
 
 # Alternatives
-<!-- この提案の代替案 (オプション) -->
+
+- 自前ホスト可能な Notion の OSS オルタナティブ [AppFlowy](https://appflowy.io/) を使用する.
+  - ただし後述の [コスト](#unresolved-issue) はこの案でも発生するので一概にベストアンサーとは出来ない.
 
 # Unresolved issue
-<!-- 未解決の問題点 (オプション) -->
+
+- プライベートリポジトリ上での GitHub Actions 実行制限
+  - デプロイなどに使用する.
+  - Pulsate の GitHub Org は課金していないため, プライベートリポジトリの場合 実行制限が発生する.
 
 # References
-<!-- 参考文献 (オプション) -->
+
+- [RFCs 0003: Notion の廃止](./0003-abolition-notion.md)
+- [AppFlowy](https://appflowy.io/)
+- [About billing for GitHub Actions - GitHub Docs](https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions)
