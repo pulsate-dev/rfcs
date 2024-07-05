@@ -1,9 +1,7 @@
----
 - 提案名: Notion の廃止
 - 提案日時: 2024-06-30
 - 提案者署名: Sho Sakuma <m1sk9@pulsate.dev>
 - RFCs Tracking PR: [#4](https://github.com/pulsate-dev/rfcs/pull/4)
----
 
 # Summary
 

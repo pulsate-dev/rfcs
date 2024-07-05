@@ -1,9 +1,7 @@
----
 - 提案名: RFCs の例
 - 提案日時: 2024/06/30
 - 提案者署名: Sho Sakuma <me@m1sk9.dev>
 - RFCs Tracking PR: なし
----
 
 # Summary
 
