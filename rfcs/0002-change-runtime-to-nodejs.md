@@ -1,8 +1,6 @@
----
 - 提案名: Change JavaScript Runtime to Node.js
 - 提案日時: 2024-01-20
 - 提案者署名: laminne <laminne@pulsate.dev>
----
 
 > [!NOTE]
 >
