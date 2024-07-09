@@ -1,9 +1,7 @@
----
 - 提案名: Notion の代替サービスを GitHub 管理に変更する
 - 提案日時: 2024-07-02
 - 提案者署名: Sho Sakuma <m1sk9@pulsate.dev>
 - RFCs Tracking PR: [#6](https://github.com/pulsate-dev/rfcs/pull/6)
----
 
 # Summary
 
@@ -40,6 +38,10 @@ Notion の代替先として rust-lang/mdbook, GitHub Pages を使った GitHub 
 - プライベートリポジトリ上での GitHub Actions 実行制限
   - デプロイなどに使用する GitHub Actions はプライベートリポジトリの場合, 2000 分/月 までの実行制限がある.
   - Pulsate の GitHub Org は課金していないため, プライベートリポジトリの場合 実行制限が発生する.
+
+- Notion で記述していたドキュメントが mdbook では十分に表現できない
+  - [souvikinator/notion-to-md)](https://github.com/souvikinator/notion-to-md) などのツールを使い, Notion から mdbook に変換することで解決可能.
+  - 移行できないデータベース等は Google スプレッドシートなど別媒体を使用して管理する.
 
 # References
 
